@@ -1,0 +1,41 @@
+:root {
+  --body-bg-color: hsl(0, 0%, 10%);
+  --app-bg-color: hsl(0, 5%, 5%);
+  --snake-bg-color: hsl(124, 64%, 96%);
+  --target-cube-bg-color: hsl(63, 100%, 50%);
+  --main-cubes-border: .25vmin solid black;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: var(--body-bg-color, black);
+}
+
+#app {
+  background-color: var(--app-bg-color, #222);
+  height: 100vmin;
+  width: 100vmin;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+
+  &>div {
+    outline: 1px solid #fff;
+  }
+}
+
+.snake {
+  background-color: var(--snake-bg-color);
+  border: var(--main-cubes-border);
+}
+
+.target__cube {
+  background-color: var(--target-cube-bg-color);
+  border: var(--main-cubes-border);
+
+}
