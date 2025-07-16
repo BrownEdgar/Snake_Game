@@ -40,7 +40,8 @@ export function drow(gameBoard) {
  * @param {number} amount - The number of segments to add.
  */
 export function expandSnake(amount) {
-  newSegments += amount
+  newSegments += amount;
+
 }
 
 /**

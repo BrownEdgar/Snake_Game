@@ -1,11 +1,12 @@
 import { expandSnake, onSnake } from './helpers';
 
-// values must by 1- 20
+// values must by 1-20
 let cube = getRandomCubePosition()
-const SNAKE_LENGTH_RATE = 4;
+const SNAKE_LENGTH_RATE = 1;
 
-export function updateCube() {
+export function updateCube(score) {
   if (onSnake(cube)) {
+    score.textContent = parseInt(score.textContent) + 1
     expandSnake(SNAKE_LENGTH_RATE);
     cube = getRandomCubePosition()
   }
