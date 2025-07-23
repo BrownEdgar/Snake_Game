@@ -29,7 +29,6 @@ npm run dev
 ```bash
 npm run build
 npm run preview
-
 ```
 
 ### 🐳 Run with Docker
@@ -39,9 +38,7 @@ Build Docker Image and run Container
 ```bash
 docker build -t snake-game .
 docker run -p '5173:5173' snake-game
-
 or
-
 docker-compose up --build
 ```
 

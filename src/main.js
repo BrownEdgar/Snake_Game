@@ -49,7 +49,7 @@ function checkForEnd() {
   gameOver = outsideGrid(getSnakeHead()) || snakeIntersection()
 }
 
-startBtn.addEventListener('click', (e) => {
+startBtn.addEventListener('click', () => {
   modalWrapper.classList.add('modal__wrapper-hide')
   window.requestAnimationFrame(start)
 })

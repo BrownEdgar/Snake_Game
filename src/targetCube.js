@@ -14,7 +14,6 @@ export function updateCube(score) {
 
 
 export function drowCube(gameBoard) {
-
   const styles = `
         grid-row-start:${cube.y};
         grid-column-start:${cube.x};
@@ -25,6 +24,10 @@ export function drowCube(gameBoard) {
   )
 }
 
+/**
+ * get random position of the cube.
+ * @returns {{x: number, y: number}}
+ */
 export function getRandomCubePosition() {
   let newPosition;
   if (newPosition == null || onSnake(newPosition)) {
@@ -33,6 +36,11 @@ export function getRandomCubePosition() {
   return newPosition;
 }
 
+
+/**
+ * set random position of the cube.
+ * @returns {{x: number, y: number}}
+ */
 function setRandomGridPosition() {
   return {
     x: Math.floor(Math.random() * 20) + 1,

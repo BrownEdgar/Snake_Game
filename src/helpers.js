@@ -25,7 +25,7 @@ export function update() {
 export function drow(gameBoard) {
   snakeBody.forEach(element => {
     const styles = `
-       grid-row-start: ${element.y};
+      grid-row-start: ${element.y};
       grid-column-start: ${element.x};
     `
     gameBoard.insertAdjacentHTML(
@@ -41,7 +41,6 @@ export function drow(gameBoard) {
  */
 export function expandSnake(amount) {
   newSegments += amount;
-
 }
 
 /**

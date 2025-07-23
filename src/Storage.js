@@ -1,5 +1,4 @@
 import { STORAGE_PROPERTY_NAME } from "./constants.js"
-
 class Storage {
   static saveToStorage(key, value) {
     if (typeof value === "string" || typeof value === "number") {
@@ -25,4 +24,5 @@ class Storage {
     localStorage.clear()
   }
 }
+
 export default Storage;

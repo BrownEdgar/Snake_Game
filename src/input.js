@@ -22,7 +22,6 @@ window.addEventListener('keydown', (e) => {
   }
 })
 
-
 export function getDirecrion() {
   lastDirection = initialDirection
   return initialDirection;
